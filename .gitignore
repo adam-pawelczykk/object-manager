@@ -1,0 +1,6 @@
+.idea
+.phpcs-cache
+.phpunit
+.phpunit.result.cache
+/phpunit.xml
+/vendor/

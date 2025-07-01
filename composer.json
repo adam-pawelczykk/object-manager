@@ -1,0 +1,39 @@
+{
+    "name": "atpawelczyk/object-manager",
+    "license": "mit",
+    "type": "library",
+    "version": "1.0.0",
+    "description": "Object Manager",
+    "authors": [
+        {
+            "name": "Adam Pawełczyk",
+            "email": "atpawelczyk@gmail.pl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ATPawelczyk\\ObjectManager\\": "src/"
+        }
+    },
+    "scripts": {
+        "cscheck": "phpcs",
+        "phpstan": "phpstan analyse src/ -c phpstan.neon --level=5 -vvv --memory-limit=256M",
+        "check": "composer cscheck && composer phpstan"
+    },
+    "require": {
+        "php": "^8.0",
+        "doctrine/orm": "^2.7",
+        "ramsey/uuid-doctrine": "^1.5",
+        "thecodingmachine/safe": "^1.2"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.12",
+        "phpstan/phpstan-strict-rules": "^1.5",
+        "phpstan/extension-installer": "^1.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}
