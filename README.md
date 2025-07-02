@@ -9,6 +9,4 @@ docker-compose run --rm app bash
 ```
 ATPawelczyk\ObjectManager\ObjectManager:
     lazy: true
-
-ATPawelczyk\ObjectManager\ObjectManagerInterface: '@DealerGroup\ObjectManager\ObjectManager'
 ```
